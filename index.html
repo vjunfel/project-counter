@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="stats">
+            <div class="stats-container">
+                <img src="./img/happy.png">
+                <div class="counter" data-ceil="380">280</div>
+                <h4> 3D Projects</h4>
+            </div>
+            <div class="stats-container">
+                <img src="./img/meh.png">
+                <div class="counter" data-ceil="13">13</div>
+                <h4> Websites</h4>
+            </div>
+            <div class="stats-container">
+                <img src="./img/sad.png">
+                <div class="counter" data-ceil="5">5</div>
+                <h4> Years Experience</h4>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        for(let i=0; i<10; i++){
+            console.log(i)
+            if(i % 2===0){
+                console.log(i  + " Even number " )
+                document.write( " Even number " + i + "<br>" )
+            }
+        }
+
+        for(let x=0; x<10; x++){
+            if(x % 2===1){
+                console.log(x  + " Odd number " )
+                document.write( " Odd number " + x  )
+            }
+        }
+    </script>
+</body>
+</html>
